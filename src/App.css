@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -32,7 +37,66 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.height {
+  height: 1px;
+  padding: 0;
+  border: #282c34;
+}
+
+._img {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Ensure the container takes up the full height */
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.line {
+  height: 0.5px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  /* Specify the height */
+  width: 30px !important;
+  /* Specify the width */
+  border-radius: 50% !important;
+  object-fit: contain;
+  /* Change to 'cover' */
+}
+
+.card-image img {
+  height: 20px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+
+.small-font {
+  font-size: 10px;
+}
+
+.min-wdth {
+  max-width: 40vw;
+  min-width: 35vw;
 }
